@@ -37,7 +37,7 @@ h3 {
   margin-bottom: 0px;
 }
 .webstudio-1 {
-  font-family: var(--webfont);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
@@ -54,16 +54,15 @@ h3 {
   display: flex;
   flex-direction: row;
 }
-
 .studio {
   width: 49px;
   height: 16px;
-  margin-left: 93px;
-  margin-top: 32px;
+  margin: 32px 50px 32px 93px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #212121;
+  box-sizing: content-box;
 }
 .studio:hover {
   color: #2196f3;
@@ -71,12 +70,12 @@ h3 {
 .portfolio {
   width: 77px;
   height: 16px;
-  margin-left: 50px;
-  margin-top: 32px;
+  margin: 32px 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #212121;
+  box-sizing: content-box;
 }
 .portfolio:hover {
   color: #2196f3;
@@ -90,6 +89,7 @@ h3 {
   font-size: 14px;
   line-height: 16px;
   color: #212121;
+  box-sizing: content-box;
 }
 .contacts:hover {
   color: #2196f3;
