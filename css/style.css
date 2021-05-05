@@ -5,19 +5,27 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
 }
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0px;
 }
 a {
   text-decoration: none;
+  display: inline;
 }
 ul {
   list-style: none;
 }
 :root {
   --webfont: "Raleway";
+  --mainfont: "Roboto";
+}
+p,
+h3 {
+  display: inline-block;
+  margin: 0px;
 }
 /* Top-line(nav) */
 .top-line {
@@ -109,12 +117,13 @@ ul {
 /* Main */
 .main {
   width: 1170px;
-  height: 1360px;
+  height: 1400px;
   margin: 94px 215px;
 }
 .main li {
   display: inline-block;
 }
+/* Main > Buttons */
 .buttons {
   width: 611px;
   height: 54px;
@@ -212,6 +221,73 @@ ul {
   letter-spacing: 0.03em;
   padding: 6px 22px;
 }
+/* Main > imges */
+section div {
+  display: inline-block;
+  width: 370px;
+  height: 404px;
+}
+section div:hover {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+}
+
+.img-conteiner-1 {
+  margin: 34px 15px 15px 0px;
+}
+.img-conteiner-2 {
+  margin: 34px 15px 15px 15px;
+}
+.img-conteiner-3 {
+  margin: 34px 0px 15px 0px;
+}
+.img-conteiner-4 {
+  margin: 15px 15px 30px 0px;
+}
+.img-conteiner-5 {
+  margin: 15px;
+}
+.img-conteiner-6 {
+  margin: 34px 0px 15px 0px;
+}
+.img-conteiner-7 {
+  margin: 15px 15px 0px 0px;
+}
+.img-conteiner-8 {
+  margin: 15px 15px 0px 15px;
+}
+.img-conteiner-9 {
+  margin: 15px 0px 0px 0px;
+}
+.img {
+  width: 370px;
+  height: 294px;
+}
+.h3-special {
+  width: 330px;
+}
+section h3 {
+  width: 322px;
+  height: 36px;
+  margin: 20px 24px 4px 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+section p {
+  width: 322px;
+  height: 30px;
+  margin: 4px 24px 20px 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 /* Подвал */
 .footer {
   background-color: #2f303a;
@@ -259,6 +335,9 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.f-mail:hover {
+  color: #2196f3;
+}
 .f-tel {
   font-style: normal;
   font-weight: normal;
@@ -267,4 +346,7 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: block;
+}
+.f-tel:hover {
+  color: #2196f3;
 }
