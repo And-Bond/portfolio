@@ -7,7 +7,6 @@ html {
   box-sizing: inherit;
   margin: 0px;
   padding: 0px;
-  outline: 2px solid red;
 }
 div {
   margin: 0px;
@@ -230,35 +229,66 @@ img {
   padding: 6px 22px;
 }
 /* Main > imges */
-section > div > div {
-  display: block;
-  width: 370px;
-  height: 404px;
-}
-section a {
+.section a {
   max-height: 404px;
 }
-section div:hover {
+.section li:hover {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
 }
 .section {
   width: 1170px;
   height: 1360px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section li {
+  width: 370px;
+  height: 404px;
 }
 .img {
   width: 370px;
   height: 294px;
 }
-.h3-special {
+.img-conteiner-1 {
+  margin: 34px 15px 15px 0px;
+}
+.img-conteiner-2 {
+  margin: 34px 15px 15px 15px;
+}
+.img-conteiner-3 {
+  margin: 34px 0px 15px 15px;
+}
+.img-conteiner-4 {
+  margin: 15px 15px 15px 0px;
+}
+.img-conteiner-5 {
+  margin: 15px 15px 15px 15px;
+}
+.img-conteiner-6 {
+  margin: 15px 0px 15px 15px;
+}
+.img-conteiner-7 {
+  margin: 15px 15px 0px 0px;
+}
+.img-conteiner-8 {
+  margin: 15px 15px 0px 15px;
+}
+.img-conteiner-9 {
+  margin: 15px 0px 0px 15px;
+}
+.section .h3-special {
   width: 330px;
-  margin-right: 20px;
-  margin-left: 20px;
+  letter-spacing: 0.04em;
+  height: 36px;
+  margin: 20px 17px 4px 24px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: #212121;
 }
-.conteiner-1 {
-  margin: 34px 30px 30px 0px;
-}
-section h3 {
+.section h3 {
   width: 322px;
   height: 36px;
   margin: 20px 24px 4px 24px;
@@ -269,7 +299,7 @@ section h3 {
   letter-spacing: 0.06em;
   color: #212121;
 }
-section p {
+.section p {
   width: 322px;
   height: 30px;
   margin: 4px 24px 20px 24px;
