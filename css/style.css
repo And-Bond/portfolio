@@ -7,13 +7,17 @@ html {
   box-sizing: inherit;
   margin: 0px;
   padding: 0px;
+  outline: 2px solid red;
+}
+div {
+  margin: 0px;
 }
 body {
   margin: 0px;
 }
 a {
   text-decoration: none;
-  display: inline;
+  display: inline-block;
 }
 ul {
   list-style: none;
@@ -26,6 +30,9 @@ p,
 h3 {
   display: inline-block;
   margin: 0px;
+}
+img {
+  display: block;
 }
 /* Top-line(nav) */
 .top-line {
@@ -117,6 +124,7 @@ h3 {
 /* Main */
 .main {
   width: 1170px;
+  /* Так надо */
   height: 1400px;
   margin: 94px 215px;
 }
@@ -222,42 +230,21 @@ h3 {
   padding: 6px 22px;
 }
 /* Main > imges */
-section div {
-  display: inline-block;
+section > div > div {
+  display: block;
   width: 370px;
   height: 404px;
+}
+section a {
+  max-height: 404px;
 }
 section div:hover {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
 }
-
-.img-conteiner-1 {
-  margin: 34px 15px 15px 0px;
-}
-.img-conteiner-2 {
-  margin: 34px 15px 15px 15px;
-}
-.img-conteiner-3 {
-  margin: 34px 0px 15px 0px;
-}
-.img-conteiner-4 {
-  margin: 15px 15px 30px 0px;
-}
-.img-conteiner-5 {
-  margin: 15px;
-}
-.img-conteiner-6 {
-  margin: 34px 0px 15px 0px;
-}
-.img-conteiner-7 {
-  margin: 15px 15px 0px 0px;
-}
-.img-conteiner-8 {
-  margin: 15px 15px 0px 15px;
-}
-.img-conteiner-9 {
-  margin: 15px 0px 0px 0px;
+.section {
+  width: 1170px;
+  height: 1360px;
 }
 .img {
   width: 370px;
@@ -265,6 +252,11 @@ section div:hover {
 }
 .h3-special {
   width: 330px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.conteiner-1 {
+  margin: 34px 30px 30px 0px;
 }
 section h3 {
   width: 322px;
