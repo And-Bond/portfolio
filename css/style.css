@@ -39,7 +39,6 @@ img {
   flex-direction: row;
   width: 1600px;
   height: 80px;
-  box-sizing: border-box;
   margin-bottom: 0px;
 }
 .webstudio-1 {
@@ -56,14 +55,20 @@ img {
 .span-blue {
   color: #2196f3;
 }
-.three-objects {
+.top-line-navigation {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 294px;
+  height: 80px;
+  margin: 0px 0 0px 93px;
+  padding: 0px;
 }
 .studio {
   width: 49px;
   height: 16px;
-  margin: 32px 50px 32px 93px;
+  margin-left: 0px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -76,7 +81,7 @@ img {
 .portfolio {
   width: 77px;
   height: 16px;
-  margin: 32px 50px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -89,41 +94,71 @@ img {
 .contacts {
   width: 68px;
   height: 16px;
-  margin-left: 50px;
-  margin-top: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #212121;
-  box-sizing: content-box;
 }
 .contacts:hover {
   color: #2196f3;
 }
 .mail-a {
-  width: 145px;
-  height: 16px;
+  width: 164px;
+  height: 18px;
   margin: 32px 50px 32px 331px;
   color: #757575;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.svg-message {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+  margin: 2px 10px 0 0;
+}
+
+.mail-a:hover .svg-message {
+  fill: #2196f3;
 }
 .mail-a:hover {
   color: #2196f3;
 }
+.svg-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
 .tel-a {
-  width: 135px;
+  width: 142px;
   height: 16px;
   margin-left: 50px;
   margin-top: 32px;
-  display: flex;
   color: #757575;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .tel-a:hover {
   color: #2196f3;
 }
-/* Main */
+.tel-a:hover .svg-tel {
+  fill: #2196f3;
+}
+/*  Main   */
 .main {
   width: 1170px;
-  /* Так надо */
+
   height: 1400px;
   margin: 94px 215px;
 }
@@ -315,39 +350,53 @@ img {
   background-color: #2f303a;
   width: 1600px;
   height: 252px;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
 }
 .white {
   color: #fff;
 }
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  width: 231px;
+  height: 132px;
+  margin: 60px 156px 60px 215px;
+}
 .webstudio-2 {
-  display: inline-block;
+  display: flex;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
-  display: inline-box;
-  margin: 60px 1240px 20px 215px;
+  letter-spacing: 0.03em;
+  width: 145px;
+  height: 31px;
+  margin: 0px 0 20px 0px;
 }
 .span-blue-2 {
   color: #2196f3;
   margin-right: 0px;
 }
 .down-contacts {
-  display: inline-block;
   width: 231px;
   height: 81px;
-  margin: 20px 1154px 60px 215px;
 }
-
+.f-list-contacts {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .f-adress {
-  display: inline;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
   letter-spacing: 0.03em;
+  margin: 0px 0px 9px 0px;
 }
 .f-mail {
   font-style: normal;
@@ -356,19 +405,84 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+  display: flex;
 }
 .f-mail:hover {
   color: #2196f3;
 }
 .f-tel {
+  width: 231px;
+  height: 21px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  display: block;
+  display: flex;
 }
 .f-tel:hover {
   color: #2196f3;
+}
+.f-contacts-tel {
+  margin-top: 9px;
+}
+.f-contacts-li {
+  width: 231px;
+  height: 21px;
+  display: flex;
+}
+.footer-social-list {
+  width: 206px;
+  height: 80px;
+  margin: 72px 878px 100px 70px;
+}
+.footer-icons-text {
+  display: flex;
+  width: 206px;
+  height: 16px;
+  margin: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-svg-list {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 0 0;
+  padding: 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-svg-list li {
+  width: 44px;
+  height: 44px;
+  display: flex;
+}
+.footer-svg-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #44454e;
+  border-radius: 50%;
+}
+.footer-svg-link:hover {
+  background-color: #2196f3;
+}
+.footer-svg-link:hover {
+  fill: #fff;
+}
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
 }
