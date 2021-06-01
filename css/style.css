@@ -24,6 +24,7 @@ ul {
 :root {
   --webfont: "Raleway";
   --mainfont: "Roboto";
+  --blue-color: #2196f3;
 }
 p,
 h3 {
@@ -66,6 +67,7 @@ img {
   padding: 0px;
 }
 .studio {
+  position: relative;
   width: 49px;
   height: 16px;
   margin-left: 0px;
@@ -78,10 +80,24 @@ img {
 .studio:hover {
   color: #2196f3;
 }
+.studio::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  opacity: 0;
+  height: 5px;
+  display: block;
+  margin-top: 30px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+}
+.studio:hover::after {
+  opacity: 1;
+}
 .portfolio {
+  position: relative;
   width: 77px;
   height: 16px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -91,10 +107,24 @@ img {
 .portfolio:hover {
   color: #2196f3;
 }
+.portfolio::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  height: 5px;
+  display: block;
+  margin-top: 30px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+}
+.portfolio:hover::after {
+  opacity: 1;
+}
 .contacts {
+  position: relative;
   width: 68px;
   height: 16px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -102,6 +132,20 @@ img {
 }
 .contacts:hover {
   color: #2196f3;
+}
+.contacts::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  opacity: 0;
+  height: 5px;
+  display: block;
+  margin-top: 30px;
+  border-radius: 2px;
+  background-color: var(--blue-color);
+}
+.contacts:hover::after {
+  opacity: 1;
 }
 .mail-a {
   width: 164px;
