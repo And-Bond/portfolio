@@ -329,6 +329,30 @@ img {
   width: 370px;
   height: 294px;
 }
+.black-content {
+  position: relative;
+}
+.black-content-p {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 370px;
+  height: 294px;
+  margin: 0px 0px 115px 0px;
+  padding: 0 24px 0 24px;
+  bottom: 0px;
+  opacity: 0;
+  background-color: var(--blue-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.section li:hover .black-content-p {
+  opacity: 0.9;
+}
 .img-conteiner-1 {
   margin: 34px 15px 15px 0px;
 }
@@ -378,7 +402,7 @@ img {
   letter-spacing: 0.06em;
   color: #212121;
 }
-.section p {
+.photos-p {
   width: 322px;
   height: 30px;
   margin: 4px 24px 20px 24px;
