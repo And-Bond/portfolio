@@ -4,6 +4,7 @@ html {
 *,
 *::after,
 *::before {
+  font-family: Roboto, sans-serif;
   box-sizing: inherit;
   margin: 0px;
   padding: 0px;
@@ -53,6 +54,7 @@ img {
   margin-top: 24px;
 }
 .span-blue {
+  font-family: Raleway, sans-serif;
   color: #2196f3;
 }
 .top-line-navigation {
@@ -74,9 +76,7 @@ img {
   font-size: 14px;
   line-height: 16px;
   color: #212121;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-sizing: content-box;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio:hover,
 .studio:focus {
@@ -85,13 +85,14 @@ img {
 .studio::after {
   content: "";
   position: absolute;
-  width: 90%;
+  width: 49px;
   opacity: 0;
-  height: 5px;
+  height: 3px;
   display: block;
   margin-top: 30px;
   border-radius: 2px;
   background-color: var(--blue-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio:hover::after,
 .studio:focus::after {
@@ -116,13 +117,14 @@ img {
 .portfolio::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 77px;
   opacity: 0;
-  height: 5px;
+  height: 3px;
   display: block;
   margin-top: 30px;
   border-radius: 2px;
   background-color: var(--blue-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio:hover::after,
 .portfolio:focus::after {
@@ -136,8 +138,7 @@ img {
   font-size: 14px;
   line-height: 16px;
   color: #212121;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:hover,
 .contacts:focus {
@@ -146,13 +147,15 @@ img {
 .contacts::after {
   content: "";
   position: absolute;
-  width: 90%;
+  width: 68px;
+  height: 3px;
   opacity: 0;
-  height: 5px;
+  height: 3px;
   display: block;
   margin-top: 30px;
   border-radius: 2px;
   background-color: var(--blue-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:focus::after,
 .contacts:hover::after {
@@ -170,8 +173,7 @@ img {
   letter-spacing: 0.02em;
   display: flex;
   flex-wrap: nowrap;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-message {
   width: 16px;
@@ -179,6 +181,7 @@ img {
   margin-right: 10px;
   fill: #757575;
   margin: 2px 10px 0 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-a:hover .svg-message,
@@ -193,6 +196,7 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel-a {
   width: 142px;
@@ -506,7 +510,7 @@ img {
 .footer-social-list {
   width: 206px;
   height: 80px;
-  margin: 72px 878px 100px 70px;
+  margin: 72px 0 100px 70px;
 }
 .footer-icons-text {
   display: flex;
@@ -558,4 +562,81 @@ img {
   width: 20px;
   height: 20px;
   fill: #ffffff;
+}
+.footer-form {
+  height: 86px;
+  width: 570px;
+  margin-left: 93px;
+  display: flex;
+  margin-top: 72px;
+  flex-wrap: wrap;
+}
+.footer-label {
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  outline: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-right: 12px;
+}
+.footer-input::placeholder {
+  width: 47px;
+  height: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-left: 28px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+}
+.footer-button:hover {
+  background-color: #fff;
+  color: var(--blue-color);
+}
+.footer-button:hover .footer-button-svg {
+  fill: var(--blue-color);
+}
+.footer-button-svg {
+  fill: #fff;
+  width: 24px;
+  margin-left: 10px;
+  height: 24px;
 }
